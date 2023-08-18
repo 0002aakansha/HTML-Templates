@@ -1,0 +1,159 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&family=Roboto:wght@300&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body {
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .d-flex {
+      display: flex;
+  }
+
+  .justify-content-center {
+      justify-content: center;
+  }
+
+  .align-items-center {
+      align-items: center;
+  }
+
+  #navbar {
+      position: fixed;
+      top: 0;
+      justify-content: space-between;
+      width: 100%;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      background-color: #121111;
+  }
+
+  .menu-item {
+      list-style: none;
+      padding: 0 .9rem;
+      font-size: 10pt;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all .3s ease;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  .menu-item:hover {
+      color: #c4cbda;
+  }
+
+  #hero {
+      background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/radio3.jpg');
+      height: 630px;
+      padding: 1rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      flex-direction: column;
+      color: #fff;
+  }
+
+  .btns {
+      margin: 2rem;
+  }
+
+  .btn {
+      border: none;
+      padding: .6rem 1rem;
+      border-radius: 5px;
+      margin: 0 .3rem;
+      font-size: 11pt;
+      letter-spacing: .5px;
+      cursor: pointer;
+      text-transform: capitalize;
+  }
+
+  .btns .btn1 {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+  }
+
+  .btn1:hover {
+      transition: all .3s ease;
+      background-color: #fff;
+      color: #000;
+  }
+
+  .heading {
+      text-transform: capitalize;
+      text-align: center;
+      letter-spacing: 1px;
+      line-height: 4rem;
+      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+  }
+
+  .menu-icon img {
+      display: none;
+      filter: invert(1);
+      width: 25px;
+  }
+
+  @media (max-width: 760px) {
+      .heading {
+          font-size: 2.5rem;
+      }
+
+      #menu-ul {
+          display: none;
+      }
+
+      .menu-icon img {
+          display: block;
+      }
+
+      .btn {
+          padding: .5rem 1rem;
+      }
+  }
+
+  @media (max-width: 537px) {
+      .heading {
+          letter-spacing: 1px;
+          line-height: 3rem;
+          font-size: 2rem;
+      }
+
+      .btns {
+          margin: 1rem;
+      }
+
+      .btn {
+          padding: .5rem;
+          font-size: 10pt;
+      }
+
+      #hero {
+          height: 600px;
+      }
+
+      #logo h1{
+        font-size: 1.2rem;
+      }
+  }
+
+  @media (max-width: 421px) {
+      .heading {
+          font-size: 1.8rem;
+      }
+  }
+  @media (max-width: 367px) {
+      .heading {
+          font-size: 1.5rem;
+      }
+  }
